@@ -95,8 +95,8 @@ windows users. I already forgot things about windows, so
 I need your help to make this a cross-platform tool.
 
 ### How I make commit:
-I use commitizen to properly format my git commits, but
-since this project is not really big, I am not going to
-be very sensitive on git commit format. Just create your
-own branch, and do PR to the master branch. It's just
-simple as that.
+I use [commitizen](https://github.com/commitizen/cz-cli)
+to properly format my git commits, but since this project
+is not really big, I am not going to be very sensitive on
+git commit format. Just create your own branch, and do PR
+to the master branch. It's just simple as that.
