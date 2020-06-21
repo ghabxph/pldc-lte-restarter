@@ -87,16 +87,12 @@ curl http://192.168.1.1/goform/RebootSettings
 To make this project more friendly to non-technical people
 please submit pull request to this repo. I will review
 your changes, and will merge it to this repo if I find
-your PR useful.
-
-I am no longer going to make changes to this repo, as I
-intentionally created this script for myself. Help others
-by sending PR here.
-
-What's the goal for contributors? Make this tool easier
-to use, for windows users. I already forgot things about
-windows, so I need your help to make this a cross-platform
-tool.
+your PR useful. I am no longer going to make changes to
+this repo, as I intentionally created this script for
+myself. Help others by sending PR here.  What's the goal
+for contributors? Make this tool easier to use, for
+windows users. I already forgot things about windows, so
+I need your help to make this a cross-platform tool.
 
 ### How I make commit:
 I use commitizen to properly format my git commits, but
