@@ -3,7 +3,7 @@
 This little tool restarts your PLDC LTE modem. That's all.
 No need to manually log-in to your LTE modem and click
 several buttons to get you to restart button. Just call
-`restarter.sh** and it shall do the job of restarting your
+`restarter.sh` and it shall do the job of restarting your
 router.
 
 **This tool must work on this kind of modem.**
