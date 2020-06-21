@@ -51,6 +51,35 @@ Put your router password, and then run `restarter.sh`
 Once you have that, simply run `restarter.sh`. Figure
 out yourself how to bind this restarter on your machine.
 
+## How does this tool work?
+Two basic steps. Send POST request to goform/formLogin
+containing your router's username and password. And then
+just simply do a basic GET request to goform/RebootSettings
+
+The router remembers your local IP address, so if you do
+login, even if you login to command line, if you visit
+idu/home.asp, you'll immediately see the home page. Not
+a very secure way of doing authentication, but I don't see
+any issue on that, as this tool is just for home use, and
+not for enterprise.
+
+Last is, I used 192.168.1.1 as router's IP. That is the
+default IP of this modem. If you changed your router's IP
+for your personal reasons, then kindly change the IP to
+the correct one.
+
+I said so many things (tl;dr). This entire blabber can
+just be summarized by these two pieces of code below.
+```
+# Log-in to the system
+curl \
+    --data "loginName=${USERNAME}" \
+    --data "loginPassword=${PASSWORD}" \
+    http://192.168.1.1/goform/formLogin
+
+# Run reboot :D
+curl http://192.168.1.1/goform/RebootSettings
+```
 
 ## Contribute guide
 To make this project more friendly to non-technical people
